@@ -196,3 +196,10 @@ background-repeat: no-repeat;
 .odd {
     background-color: #f7f7f7;
 }
+#header .tabmenu li a {
+    padding: 16px 6px 14px;
+}
+#header .tabmenu li.selected a {
+    padding: 16px 6px 14px;
+
+}
