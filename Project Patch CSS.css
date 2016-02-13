@@ -171,6 +171,23 @@ Font-Size:0px!important;
 Color:Red!important;
 }
 
+body:before  {
+	background: url(%%headergradient%%) no-repeat scroll 0% 0% / 100% auto;
+    background-repeat: repeat;
+    -webkit-animation: banner 60s infinite linear;
+    animation: banner 60s infinite linear;
+}
+
+@-webkit-keyframes banner {
+    from { background-position: 0 0px; }
+    to { background-position: -5402px 500px; }
+}
+@keyframes banner {
+    from { background-position: 0 0px; }
+    to { background-position: -5402px 0px; }
+}
+
+
 #header .pagename a{
 content:"";
 Background-Image:url(%%Project-Patch3%%);
@@ -196,6 +213,12 @@ background-repeat: no-repeat;
 .odd {
     background-color: #f7f7f7;
 }
+
+#sr-header-area {
+	font-size:10px!important;
+	color: #99C4F9!important;
+}
+
 #header .tabmenu li a {
     padding: 16px 6px 14px;
 }
